@@ -11,7 +11,7 @@ steps:
       - "$_SERVICE_NAME:latest"
       - $_ROOT_DIR
       - "-f"
-      - $_ROOT_DIR/Dockerfile.qa
+      - Dockerfile.qa
       - '--network=cloudbuild'
     id: Build
   - name: gcr.io/cloud-builders/docker
