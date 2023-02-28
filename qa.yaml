@@ -20,6 +20,7 @@ steps:
     id: Test
 options:
   substitutionOption: ALLOW_LOOSE
+  logging: CLOUD_LOGGING_ONLY
 substitutions:
   _SERVICE_NAME: backend-service-test
   _CI: "true"
