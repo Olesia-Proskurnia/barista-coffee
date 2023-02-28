@@ -12,6 +12,7 @@ steps:
       - $_ROOT_DIR
       - "-f"
       - $_ROOT_DIR/Dockerfile.qa
+      - '--network=cloudbuild'
     id: Build
   - name: gcr.io/cloud-builders/docker
     args:
